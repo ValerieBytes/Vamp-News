@@ -11,13 +11,18 @@ body {
     margin: 50px auto;
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 2s, transform 2s;
+    display: block; /* Set the initial state to 'block' */
+    visibility: hidden; /* Hide initially */
+    transition: opacity 2s, transform 2s, visibility 0s 2s; /* Delay the visibility transition */
 }
 
 #age-verification.show {
     opacity: 1;
     transform: translateY(0);
+    visibility: visible; /* Make it visible when 'show' class is added */
+    transition: opacity 2s, transform 2s;
 }
+
 
 #age-verification h2 {
     margin-bottom: 20px;
