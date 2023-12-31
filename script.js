@@ -1,3 +1,5 @@
+"use strict"; // Add 'use strict' to enable strict mode
+
 function setCookie(name, value, days) {
     var expires = '';
     if (days) {
