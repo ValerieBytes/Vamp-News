@@ -24,3 +24,8 @@ function verifyAge() {
         window.location.href = 'under-18.html';
     }
 }
+// JavaScript code to add or remove the transition class
+function toggleTransition() {
+    var bodyElement = document.body;
+    bodyElement.classList.toggle('transition-effect');
+}
