@@ -41,6 +41,11 @@ button:hover {
     color: #e50914;
 }
 
+#content {
+    text-align: center;
+    margin: 50px auto;
+}
+
 header {
     background-color: #222;
     padding: 10px 0;
