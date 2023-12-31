@@ -41,14 +41,15 @@
 	</div>
 	
 	<script>
-        function verifyAge(response) {
-            if (response === 'yes') {
+        function verifyAge() {
+            var age = document.getElementById('ageInput').value;
+            if (age >= 18) {
                 document.getElementById('age-verification').style.display = 'none';
                 document.getElementById('content').style.display = 'block';
-            } else if (response === 'no') {
-                window.location.href = 'under-18.html'; // Redirect to a page for users under 18
+            } else {
+                window.location.href = 'under-18.html';
             }
         }
-    </script>
+	</script>
 </body>
 </html>
