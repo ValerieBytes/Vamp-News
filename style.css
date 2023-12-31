@@ -11,7 +11,7 @@ body {
     margin: 50px auto;
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 2s, transform 2s, visibility 0s 2s; /* Delay the visibility transition */
+    transition: opacity 2s, transform 2s; /* Delay the visibility transition */
     -webkit-transition: opacity 2s, -webkit-transform 2s; /*Add -webkit-transition for Safari*/
 }
 
