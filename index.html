@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Nocturnal Gazette</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
 	<div id="age-verification">
@@ -39,17 +40,5 @@
         <p>&copy; 2023 The Nocturnal Gazette</p>
     </footer>
 	</div>
-	
-	<script>
-        function verifyAge() {
-            var age = document.getElementById('ageInput').value;
-            if (age >= 18) {
-                document.getElementById('age-verification').style.display = 'none';
-                document.getElementById('content').style.display = 'block';
-            } else {
-                window.location.href = 'under-18.html';
-            }
-        }
-	</script>
 </body>
 </html>
