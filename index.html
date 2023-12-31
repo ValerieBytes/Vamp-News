@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Nocturnal Gazette</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<div id="age-verification">
+    <h2>Are you over the age of 18?</h2>
+    <input type="number" id="ageInput" placeholder="Enter your age">
+    <button onclick="verifyAge()">Submit</button>
+	</div>
+	
+	<div id="content" style="display: none;">
     <header>
         <h1>The Nocturnal Gazette</h1>
         <nav>
@@ -31,5 +38,17 @@
     <footer>
         <p>&copy; 2023 The Nocturnal Gazette</p>
     </footer>
+	</div>
+	
+	<script>
+        function verifyAge(response) {
+            if (response === 'yes') {
+                document.getElementById('age-verification').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+            } else if (response === 'no') {
+                window.location.href = 'under-18.html'; // Redirect to a page for users under 18
+            }
+        }
+    </script>
 </body>
 </html>
