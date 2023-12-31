@@ -6,8 +6,8 @@ body {
     padding: 0;
 }
 
-#age-verification,
-#content {
+#age-verification
+{
     text-align: center;
     margin: 50px auto;
 }
