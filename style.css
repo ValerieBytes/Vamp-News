@@ -11,20 +11,18 @@ body {
     margin: 50px auto;
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 2s, transform 2s; /* Delay the visibility transition */
-    -webkit-transition: opacity 2s, -webkit-transform 2s; /*Add -webkit-transition for Safari*/
+    display: block; /* Set the initial state to 'block' */
+    visibility: hidden; /* Hide initially */
+    transition: opacity 2s, transform 2s, visibility 0s 2s; /* Delay the visibility transition */
 }
 
 #age-verification.show {
     opacity: 1;
     transform: translateY(0);
-    -webkit-transform: translateY(0); /* Add -webkit-transform for Safari */
+    visibility: visible; /* Make it visible when 'show' class is added */
+    transition: opacity 2s, transform 2s;
 }
 
-
-#age-verification h2 {
-    margin-bottom: 20px;
-}
 
 button {
     background-color: #e50914;
@@ -46,9 +44,9 @@ header {
     text-align: center;
 }
 
-header h1 {
+/*header h1 {
     color: #e50914;
-}
+}*/
 
 nav ul {
     list-style-type: none;
