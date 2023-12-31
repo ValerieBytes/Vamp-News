@@ -14,6 +14,7 @@ body {
     display: block; /* Set the initial state to 'block' */
     visibility: hidden; /* Hide initially */
     transition: opacity 2s, transform 2s, visibility 0s 2s; /* Delay the visibility transition */
+    -webkit-transition: opacity 2s, -webkit-transform 2s; /*Add -webkit-transition for Safari*/
 }
 
 #age-verification.show {
@@ -21,6 +22,7 @@ body {
     transform: translateY(0);
     visibility: visible; /* Make it visible when 'show' class is added */
     transition: opacity 2s, transform 2s;
+    -webkit-transform: translateY(0); /* Add -webkit-transform for Safari */
 }
 
 
